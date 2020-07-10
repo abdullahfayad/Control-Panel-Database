@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Control</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="newcss.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="robot.png" alt="logo" />
+            <h1>Control Panel</h1>
+        </div>
+        <div class="center">
+            <!--when any button pressed, a data will send to update.php page as a GET-->
+            <input type="button" onClick="parent.location='update.php?direction=F'" value="Forwards" class="button button1"><br>
+            <input type="button" onClick="parent.location='update.php?direction=L'" value="Left" class="button button2">
+            <input type="button" onClick="parent.location='update.php?direction=S'" value="Stop" class="button button3">
+            <input type="button" onClick="parent.location='update.php?direction=R'" value="Right" class="button button4"><br>
+            <input type="button" onClick="parent.location='update.php?direction=B'" value="Backwards" class="button button5">
+        </div>
+    </body>
+</html>
